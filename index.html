@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Celulose³</title>
 </head>
 <body>
 
     <header>
 
-        <div class="header-menu">   
-            <img src="img/menu.svg" alt="menu">
+        <div class="header-menu">
+            <button type="button" class="menuButton" id="menuButton"></button>
+            <menu class="menu" id="menu" style="display: none;">
+                <a class="menu__item" href="">HOME</a>
+                <a class="menu__item" href="">CATÁLOGO</a>
+                <a class="menu__item" href="">CONTATO</a>
+            </menu>
         </div>
 
             <img src="img/logo.svg" alt="logomarca" class="header-logo">
@@ -24,13 +30,19 @@
 
     <main>
 
+        <section id="banner-livros">
+
+        </section>
 
         <section id="vitrine-livros">
             <h2>Vitrine</h2>
             <div class="cards-vitrine">
-
+                <img class="livro-img" src="img/exemplo.jpg" alt="">
+                <h3 class="livro-titulo">Exemplo</h3>
+                <span class="livro-preco-antigo">R$ 0,00</span>
+                <span class="livro-preco-atual">R$ 0,00</span>
             </div>
-            <button type="button" class="vermais">Ver mais</button>
+            <button type="button" class="vermais">ver mais <img src="img/arrow_right.svg" alt="seta para direita"></button>
         </section>
 
         <section class="newsletter">
@@ -70,7 +82,7 @@
                     <ul>
                         <li><a href="mailto:celulose@outlook.com">Email: celulose@outlook.com</a></li>
                         <li><a href="tel:+5511920142803">Tel: (11) 92014-2803</a></li>
-    
+
                     </ul>
                 </nav>
             </div>
