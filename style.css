@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
-
+    
     --fundoPadrao: #CEDA95;
     --destaquePrimario: #ffff;
     --destaqueSecundario: #6C7B29;
-    --destaqueTerciario: #463905;
-
+    --destaqueTerciario: rgba(72, 57, 5, 0.502);
+    
     --fonteTitulos: 'Joan';
     --fontePadrao: 'Inter';
+}
+
+/****************
+    GERAL  
+****************/
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -28,14 +32,39 @@ main {
     justify-content: center;
 }
 
+/****************
+    HEADER  
+****************/
+
 header {
     display: flex;
-    height: 80px;
+    height: 70px;
     background-color: var(--destaquePrimario);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
+.header-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-logo {
+    width: 100%;
+    height: 60px;
+}
+
+.header-carrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+/****************
+    NEWSLETTER  
+****************/
 
 .newsletter {
     display: flex;
@@ -94,11 +123,58 @@ header {
 ****************/
 
 .footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
     background-color: var(--destaqueSecundario);
+}
+
+.footer-info h2 {
+    color: var(--destaquePrimario);
+    font-family: var(--fonteTitulos);
+    font-weight: 200;
+    padding-bottom: 0.5rem;
+}
+
+.footer-info p {
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #000;
+    font-family: var(--fontePadrao);
+    font-size: 16px;
+}
+
+.footer-social ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
 }
 
 .footer-copyright {
     display: flex;
-    background-color: var(--destaquePrimario);
     justify-content: center;
+    padding: 0.5rem;
+    background-color: var(--destaquePrimario);
+    font-family: var(--fontePadrao);
+    font-size: 14x;
 }
