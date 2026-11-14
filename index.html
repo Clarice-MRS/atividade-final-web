@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
     <title>Celulose³</title>
 </head>
 <body>
@@ -31,16 +31,18 @@
     <main>
 
         <section id="banner-livros">
-
+            <div class="banner__left"></div>
+            <div class="banner__right">
+                <img class="banner__bgImg" src="img/exemplo.jpg" alt="O Pequeno Príncipe">
+                <p class="banner__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis ut exercitationem libero non harum minus dolores repellendus molestiae hic quos quasi aliquid obcaecati recusandae. Iure beatae minus at cupiditate?</p>
+                <button class="banner__button">Detalhes</button>
+            </div>
         </section>
 
         <section id="vitrine-livros">
             <h2>Vitrine</h2>
-                <div class="cards-vitrine">
-                    <img class="livro-img" src="img/exemplo.jpg" alt="">
-                    <h3 class="livro-titulo">Exemplo</h3>
-                    <span class="livro-preco-antigo">R$ 0,00</span>
-                    <span class="livro-preco-atual">R$ 0,00</span>
+                <div class="container-vitrine">
+
                 </div>
             <button type="button" class="vermais">ver mais <img src="img/arrow_right.svg" alt="seta para direita"></button>
         </section>
@@ -92,6 +94,5 @@
             <span>&copy; Celulose³ - Todos os direitos reservados - 2026.</span>
         </div>
     </footer>
-
 </body>
 </html>

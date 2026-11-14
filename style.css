@@ -50,6 +50,7 @@ header {
     padding: 0.5rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .header-menu {
@@ -130,6 +131,53 @@ header {
 }
 
 /****************
+    BANNER
+****************/
+
+#banner-livros {
+    display: flex;
+    max-width: 720px;
+    aspect-ratio: 16/9;
+}
+
+.banner__left {
+    background-image: url(img/exemplo.jpg);
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 50%;
+}
+
+.banner__right {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 50%;
+    text-align: justify;
+}
+
+.banner__bgImg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    width: 100%;
+    object-fit: cover;
+
+    filter: brightness(0.25);
+}
+
+.banner__description,
+.banner__button {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.banner__description {
+    color: white;
+}
+
+/****************
     VITRINE
 ****************/
 
@@ -146,6 +194,12 @@ header {
     font-weight: 200;
 }
 
+.container-vitrine {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
 .cards-vitrine {
     display: flex;
     flex-direction: column;
@@ -153,7 +207,7 @@ header {
     gap: 0.5rem;
 
     width: 150px;
-    height: 280px;
+    height: 300px;
     background-color: var(--destaquePrimario);
 }
 
@@ -177,8 +231,6 @@ header {
 .cards-vitrine img {
     display: block;
     margin: 0 auto;
-    width: 130px;
-    height: 180px;
 }
 
 .vermais {
