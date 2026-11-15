@@ -50,7 +50,6 @@ header {
     padding: 0.5rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .header-menu {
@@ -134,20 +133,34 @@ header {
     BANNER
 ****************/
 
-#banner-livros {
+#banner-livros h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: var(--fonteTitulos);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.banner {
     display: flex;
     max-width: 720px;
     aspect-ratio: 16/9;
 }
 
 .banner__left {
-    background-image: url(img/exemplo.jpg);
+    background-image: url(img/livros/o-pequeno-principe.jpg);
     background-size: cover;
     border-radius: 0.5rem 0 0 0.5rem;
     width: 50%;
 }
 
 .banner__right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
     position: relative;
     overflow: hidden;
     border-radius: 0 0.5rem 0.5rem 0;
@@ -166,15 +179,55 @@ header {
     filter: brightness(0.25);
 }
 
+.banner__right h2,
 .banner__description,
 .banner__button {
     position: relative;
     z-index: 1;
-    padding: 1rem;
 }
 
 .banner__description {
     color: white;
+    overflow: auto;
+    flex-grow: 1;
+    font-family: var(--fontePadrao);
+}
+
+.banner__button {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--destaqueSecundario);
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    font-family: var(--fonteTitulos);
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+.banner__button:hover {
+    transform: scale(1.05);
+}
+
+/****************
+    BUSCAR
+****************/
+
+#buscar {
+    width: 80%;
+    max-width: 720px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 3rem;
+    border: 1px solid #aaaaaa;
+    font-family: var(--fontePadrao);
+    font-size: 1rem;
+}
+
+#buscar:focus {
+    outline: 2px solid var(--destaqueSecundario);
 }
 
 /****************
@@ -184,7 +237,9 @@ header {
 #vitrine-livros {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
+    max-width: 720px;
 }
 
 #vitrine-livros h2 {
@@ -192,11 +247,13 @@ header {
     font-family: var(--fonteTitulos);
     font-size: 30px;
     font-weight: 200;
+    margin: 1rem 0;
 }
 
 .container-vitrine {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -204,8 +261,10 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    gap: 0.5rem;
-
+    padding-bottom: 1rem;
+    gap: 0.3rem;
+    box-shadow: 2px 2px 4px 0 #0002;
+    border-radius: 0.5rem;
     width: 150px;
     height: 300px;
     background-color: var(--destaquePrimario);
@@ -214,6 +273,12 @@ header {
 .cards-vitrine h3 {
     font-family: var(--fonteTitulos);
     font-weight: 200;
+    min-height: 3rem;
+}
+
+.cards-vitrine img {
+    width: 150px;
+    height: 200px;
 }
 
 .livro-preco-antigo {
@@ -225,12 +290,7 @@ header {
 
 .livro-preco-atual {
     font-family: var(--fontePadrao);
-    font-size: 25px;
-}
-
-.cards-vitrine img {
-    display: block;
-    margin: 0 auto;
+    font-size: 20px;
 }
 
 .vermais {
@@ -239,6 +299,8 @@ header {
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem;
+    width: 150px;
+    margin: 0 auto;
 
     border: none;
     border-radius: 25px;
@@ -308,6 +370,10 @@ header {
     height: 2rem;
     width: 100%;
     background-color: var(--destaqueTerciario);
+}
+
+#form-newsletter input:focus{
+    outline: 2px solid var(--destaqueSecundario);
 }
 
 #form-newsletter button {
@@ -386,16 +452,149 @@ header {
     font-size: 14x;
 }
 
+/***********************
+     CONTATO.HTML
+***********************/
+
+.sobre-celulose {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+
+    margin-top: 2rem;
+    padding: 2rem;
+
+    border-radius: 20px;
+    background-color: var(--destaquePrimario);
+    font-family: var(--fontePadrao);
+}
+
+.sobre-celulose img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.sobre-celulose p {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+.sobre-celulose h2, .form-contato h2 {
+    font-size: 30px;
+    font-family: var(--fonteTitulos);
+    color: var(--destaqueSecundario);
+    font-weight: 300;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 0.5rem;
+
+    margin: 2rem;
+    padding: 2rem;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    background-color: var(--destaquePrimario);
+    font-family: var(--fontePadrao);
+
+}
+
+.form-contato p {
+    text-align: center;
+}
+
+#formulario-p-contato {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 0.5rem;
+}
+
+#formulario-p-contato button{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+
+    width: 200px;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 25px;
+    background-color: var(--destaqueSecundario);
+    color: var(--destaquePrimario);
+    font-size: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+#formulario-p-contato input{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0 0.5rem;
+    height: 2rem;
+    width: 100%;
+    background-color: var(--destaqueTerciario);
+}
+
+#formulario-p-contato textarea{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem;
+    height: 6rem;
+    width: 100%;
+    background-color: var(--destaqueTerciario);
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+#formulario-p-contato input:focus, #formulario-p-contato textarea:focus{
+    outline: 2px solid var(--destaqueSecundario);
+}
+
+#formulario-p-contato button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#mensagem-confirmacao {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--fundoPadrao);
+}
+
+#mensagem-confirmacao h3 {
+    color: var(--destaqueSecundario);
+    font-family: var(--fonteTitulos);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /****************
   MEDIA QUERIES
 ****************/
 
 /* Celular */
-@media screen and (min-width:  576px) {
+@media screen and (max-width:  576px) {
+
 }
 
 /* Tablet */
 @media screen and (min-width:  768px) {
+    .banner__description {
+        display: block;
+    }
+
     .footer-info {
         flex-direction: row;
         justify-content: space-evenly;
