@@ -10,10 +10,9 @@ export const Vitrine = [
         sinopse: "Riobaldo, um ex-jagunço e agora fazendeiro aposentado, reconta em forma de um longo monólogo (dirigido a um interlocutor silencioso chamado de doutor ou compadre) as lembranças de sua juventude nos sertões de Minas Gerais, Bahia e Goiás.",
         autor: "Guimarães Rosa",
         editora: "Companhia das Letras",
-        ano: 1956, 
+        ano: 1956,
         numPaginas: 560
     },
-
     {
         id: 2,
         titulo: "O Nome da Rosa",
@@ -25,10 +24,9 @@ export const Vitrine = [
         sinopse: "Um frade franciscano e seu noviço viajam a uma rica abadia no norte da Itália para participar de um debate teológico, mas acabam investigando uma série de assassinatos misteriosos ligados à biblioteca secreta do local.",
         autor: "Umberto Eco",
         editora: "Record",
-        ano: 2019, 
+        ano: 2019,
         numPaginas: 592
     },
-
     {
         id: 3,
         titulo: "A Trilogia de Nova York",
@@ -40,10 +38,9 @@ export const Vitrine = [
         sinopse: "Em A Trilogia de Nova York, Paul Auster reúne três histórias policiais que exploram os mistérios da identidade, do conhecimento e da arte. Em meio a investigações, desaparecimentos e equívocos, Nova York se transforma em um labirinto de mistérios, onde realidade e ficção se confundem.",
         autor: "Paul Auster",
         editora: "Companhia das Letras",
-        ano: 1999, 
+        ano: 1999,
         numPaginas: 344
     },
-
     {
         id: 4,
         titulo: "Dias Perfeitos",
@@ -55,10 +52,9 @@ export const Vitrine = [
         sinopse: "Téo, um estudante de medicina solitário, que divide seu tempo entre cuidar da mãe paraplégica e dissecar cadáveres nas aulas de anatomia, ao conhecer Clarice — uma jovem de espírito livre e aspirante a roteirista que não corresponde ao seu interesse —, desenvolve uma obsessão doentia por ela.",
         autor: "Raphael Montes",
         editora: "Companhia das Letras",
-        ano: 2014, 
+        ano: 2014,
         numPaginas: 280
     },
-
     {
         id: 5,
         titulo: "Fim",
@@ -70,10 +66,9 @@ export const Vitrine = [
         sinopse: "Cinco amigos cariocas rememoram as passagens marcantes de suas vidas: festas, casamentos, separações, manias, inibições, arrependimentos.",
         autor: "Fernanda Torres",
         editora: "Companhia das Letras",
-        ano: 2013, 
+        ano: 2013,
         numPaginas: 208
     },
-
     {
         id: 6,
         titulo: "A Letra Escarlate",
@@ -85,26 +80,7 @@ export const Vitrine = [
         sinopse: "Na Boston puritana do século XVII, Hester Prynne é condenada por adultério após ter uma filha e se recusar a revelar o pai, sendo obrigada a usar a letra A bordada no peito como símbolo de vergonha.",
         autor: "Nathaniel Hawthorne",
         editora: "Editora Antofágica",
-        ano: 2024, 
+        ano: 2024,
         numPaginas: 392
     }
 ];
-
-
-/*
-atributos - livro com detalhes
-
-id: ;
-titulo: ;
-imagem: ;
-alt: ;
-sinopse: ;
-autor: ;
-editora: ;
-ano: ;
-numPaginas: ;
-preço: ;
-categoria: ;
-avaliacao: ; (já um extra, + fácil de ser implementado)
-
-*/

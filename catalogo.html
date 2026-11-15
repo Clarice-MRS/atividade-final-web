@@ -21,21 +21,17 @@
             </menu>
         </div>
 
-        <img src="img/logo.svg" alt="logomarca" class="header-logo">
+        <a href="index.html"><img src="img/logo.svg" alt="logomarca" class="header-logo"></a>
 
-        <div class="header-carrinho">
-            <img src="img/carrinho.svg" alt="carrinho">
-        </div>
+        <button type="button" class="carrinhoButton"></button>
     </header>
 
     <main>
+        <h2 id="catalogo-heading">Catálogo</h2>
         <input type="text" name="" id="buscar" placeholder="Buscar por título ou autor">
 
-        <div class="cards-vitrine">
-            <img src="${livro.imagem}" alt="${livro.alt}">
-            <h3 class="livro-titulo">${livro.titulo}</h3>
-            <span class="livro-preco-antigo"> R$ ${livro.precoAntigo.toFixed(2).replace(".", ",")}</span>
-            <span class="livro-preco-atual"> R$ ${livro.precoAtual.toFixed(2).replace(".", ",")}</span>
+        <div class="container-catalogo">
+            <!-- Cards dinâmicos aqui -->
         </div>
 
     </main>

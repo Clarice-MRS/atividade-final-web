@@ -42,6 +42,9 @@ main {
 ****************/
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     height: 70px;
     background-color: var(--destaquePrimario);
@@ -66,9 +69,16 @@ header {
     height: 60px;
 }
 
-.header-carrinho img {
-    width: 40px;
-    height: 40px;
+.carrinhoButton {
+    cursor: pointer;
+    background-image: url(img/carrinho.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    aspect-ratio: 1;
 }
 
 /****************
@@ -171,8 +181,6 @@ header {
 .banner__bgImg {
     position: absolute;
     inset: 0;
-    z-index: 0;
-
     width: 100%;
     object-fit: cover;
 
@@ -183,7 +191,6 @@ header {
 .banner__description,
 .banner__button {
     position: relative;
-    z-index: 1;
 }
 
 .banner__description {
@@ -216,10 +223,10 @@ header {
 ****************/
 
 #buscar {
+    box-sizing: border-box;
     width: 80%;
     max-width: 720px;
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
     border-radius: 3rem;
     border: 1px solid #aaaaaa;
     font-family: var(--fontePadrao);
@@ -228,6 +235,85 @@ header {
 
 #buscar:focus {
     outline: 2px solid var(--destaqueSecundario);
+}
+
+/****************
+    CATALOGO
+****************/
+
+#catalogo-heading {
+    font-family: var(--fonteTitulos);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.container-catalogo {
+}
+
+.cardCatalogo {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    max-width: 720px;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 4px #0002;
+    margin: 1rem 0;
+    font-family: var(--fontePadrao);
+
+    transition: transform 100ms;
+
+    .cardCatalogo__img {
+        border-radius: 0.5rem 0 0 0.5rem;
+        width: 70px;
+    }
+
+    .cardCatalogo__info {
+        flex-grow: 1;
+        align-self: stretch;
+        padding: 0.75rem;
+
+        .cardCatalogo__titulo,
+        .cardCatalogo__preco {
+            font-size: 1.25rem;
+        }
+
+        .cardCatalogo__preco {
+            margin-top: 0.5rem;
+        }
+    }
+
+    .cardCatalogo__button {
+        display: flex;
+        margin: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: 2px solid #6C7B29;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .cardCatalogo__button:hover,
+    .cardCatalogo__button:active {
+        background-color: #6C7B29;
+
+        .cardCatalogo__buttonImg {
+            filter: brightness(0) invert();
+        }
+    }
+
+    .cardCatalogo__buttonImg {
+        display: block;
+        padding: 0.5rem;
+    }
+}
+
+.cardCatalogo:hover {
+    transform: scale(105%);
 }
 
 /****************
@@ -260,37 +346,44 @@ header {
 .cards-vitrine {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0.5rem;
     padding-bottom: 1rem;
-    gap: 0.3rem;
+    gap: 0.25rem;
     box-shadow: 2px 2px 4px 0 #0002;
     border-radius: 0.5rem;
     width: 150px;
-    height: 300px;
     background-color: var(--destaquePrimario);
+    cursor: pointer;
+
+    transition: transform 100ms;
+
+    img {
+        width: 150px;
+        height: 200px;
+    }
+
+    h3 {
+        font-family: var(--fonteTitulos);
+        font-weight: 200;
+        flex-grow: 1;
+    }
+
+    .livro-preco-antigo {
+        color: #a5a3a3;
+        text-decoration: line-through;
+        font-family: var(--fontePadrao);
+    }
+
+    .livro-preco-atual {
+        font-family: var(--fontePadrao);
+        font-size: 20px;
+    }
+
 }
 
-.cards-vitrine h3 {
-    font-family: var(--fonteTitulos);
-    font-weight: 200;
-    min-height: 3rem;
-}
-
-.cards-vitrine img {
-    width: 150px;
-    height: 200px;
-}
-
-.livro-preco-antigo {
-    color: #a5a3a3;
-    text-decoration: line-through;
-    font-size: 16px;
-    font-family: var(--fontePadrao);
-}
-
-.livro-preco-atual {
-    font-family: var(--fontePadrao);
-    font-size: 20px;
+.cards-vitrine:hover {
+    transform: scale(105%);
 }
 
 .vermais {
@@ -656,7 +749,7 @@ textarea::placeholder {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
 }
 
 /* Desktop */

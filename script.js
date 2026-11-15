@@ -1,10 +1,14 @@
 import { Vitrine } from "./js/vitrine.js";
+import { catalogo } from "./js/catalogo.js";
 
 let isMenuActive = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 	setupMenu()
-	criarVitrine();
+	if (document.URL.includes("index.html"))
+		criarVitrine();
+	if (document.URL.includes("catalogo.html"))
+		criarCatalogo();
 	console.log("hello");
 });
 
@@ -70,9 +74,6 @@ if (formularioNewsletter && mensagemNewsletter) {
 /* criação da vritine */
 
 function criarVitrine(){
-
-    console.log("que que ta acontecendo");
-
     const gridVitrine = document.querySelector(".container-vitrine");
 
     Vitrine.forEach(livro => {
@@ -82,8 +83,25 @@ function criarVitrine(){
                 <h3 class="livro-titulo">${livro.titulo}</h3>
                 <span class="livro-preco-antigo"> R$ ${livro.precoAntigo.toFixed(2).replace(".", ",")}</span>
                 <span class="livro-preco-atual"> R$ ${livro.precoAtual.toFixed(2).replace(".", ",")}</span>
-                </div>
+			</div>
         `;
     });
+}
 
+function criarCatalogo(){
+    const gridCatalogo = document.querySelector(".container-catalogo");
+
+    catalogo.forEach(livro => {
+        gridCatalogo.innerHTML += `
+            <div class="cardCatalogo">
+                <img class="cardCatalogo__img" src="${livro.imagem}" alt="${livro.alt}">
+                <div class="cardCatalogo__info">
+					<h3 class="cardCatalogo__titulo">${livro.titulo}</h3>
+					<p class="cardCatalogo__autor">${livro.autor}</p>
+					<p class="cardCatalogo__preco"> R$ ${livro.precoAtual.toFixed(2).replace(".", ",")}</p>
+				</div>
+				<button class="cardCatalogo__button" type="button"><img class="cardCatalogo__buttonImg" src="img/carrinho-mais.svg"/></button>
+			</div>
+        `;
+    });
 }
