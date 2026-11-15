@@ -42,6 +42,7 @@ if (formulario && mensagem) {
 				<p>Agradecemos o contato! Em breve alguém da equipe retornará pelo email para respondê-lo.</p>
 			</div>
 		`
+		formulario.reset();
 	});
 }
 
@@ -59,9 +60,10 @@ if (formularioNewsletter && mensagemNewsletter) {
 		mensagemNewsletter.innerHTML = `
 			<div id="men-confirmacao-newsletter">
 				<h3>Assinatura Confirmada!</h3>
-				<p>Seja Bem - Vindo</p>
+				<p>Sua inscrição foi realizada com sucesso! Em breve, você receberá em seu e-mail novidades, recomendações e informações sobre nossas leituras semanais. Prepare-se para descobrir novas histórias com a gente!</p>
 			</div>
 		`
+		formularioNewsletter.reset();
 	});
 }
 

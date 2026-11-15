@@ -6,7 +6,12 @@ export const Vitrine = [
         precoAntigo: 80.00,
         precoAtual: 40.00,
         imagem: "img/livros/grande-sertao-veredas.png",
-        alt: "capa do livro Grande Sertões: Veredas"
+        alt: "capa do livro Grande Sertões: Veredas",
+        sinopse: "Riobaldo, um ex-jagunço e agora fazendeiro aposentado, reconta em forma de um longo monólogo (dirigido a um interlocutor silencioso chamado de doutor ou compadre) as lembranças de sua juventude nos sertões de Minas Gerais, Bahia e Goiás.",
+        autor: "Guimarães Rosa",
+        editora: "Companhia das Letras",
+        ano: 1956, 
+        numPaginas: 560
     },
 
     {
@@ -16,7 +21,12 @@ export const Vitrine = [
         precoAntigo: 100.00,
         precoAtual: 60.00,
         imagem: "img/livros/o-nome-da-rosa.png",
-        alt: "capa do livro O Nome da Rosa"
+        alt: "capa do livro O Nome da Rosa",
+        sinopse: "Um frade franciscano e seu noviço viajam a uma rica abadia no norte da Itália para participar de um debate teológico, mas acabam investigando uma série de assassinatos misteriosos ligados à biblioteca secreta do local.",
+        autor: "Umberto Eco",
+        editora: "Record",
+        ano: 2019, 
+        numPaginas: 592
     },
 
     {
@@ -26,7 +36,12 @@ export const Vitrine = [
         precoAntigo: 85.00,
         precoAtual: 76.00,
         imagem: "img/livros/a-trilogia-de-nova-york.png",
-        alt: "capa do livro A Trilogia de Nova York"
+        alt: "capa do livro A Trilogia de Nova York",
+        sinopse: "Em A Trilogia de Nova York, Paul Auster reúne três histórias policiais que exploram os mistérios da identidade, do conhecimento e da arte. Em meio a investigações, desaparecimentos e equívocos, Nova York se transforma em um labirinto de mistérios, onde realidade e ficção se confundem.",
+        autor: "Paul Auster",
+        editora: "Companhia das Letras",
+        ano: 1999, 
+        numPaginas: 344
     },
 
     {
@@ -36,7 +51,12 @@ export const Vitrine = [
         precoAntigo: 51.80,
         precoAtual: 40.50,
         imagem: "img/livros/dias-perfeitos.png",
-        alt: "capa do livro Dias Perfeitos"
+        alt: "capa do livro Dias Perfeitos",
+        sinopse: "Téo, um estudante de medicina solitário, que divide seu tempo entre cuidar da mãe paraplégica e dissecar cadáveres nas aulas de anatomia, ao conhecer Clarice — uma jovem de espírito livre e aspirante a roteirista que não corresponde ao seu interesse —, desenvolve uma obsessão doentia por ela.",
+        autor: "Raphael Montes",
+        editora: "Companhia das Letras",
+        ano: 2014, 
+        numPaginas: 280
     },
 
     {
@@ -46,7 +66,12 @@ export const Vitrine = [
         precoAntigo: 47.35,
         precoAtual: 32.00,
         imagem: "img/livros/fim.png",
-        alt: "capa do livro Fim"
+        alt: "capa do livro Fim",
+        sinopse: "Cinco amigos cariocas rememoram as passagens marcantes de suas vidas: festas, casamentos, separações, manias, inibições, arrependimentos.",
+        autor: "Fernanda Torres",
+        editora: "Companhia das Letras",
+        ano: 2013, 
+        numPaginas: 208
     },
 
     {
@@ -56,7 +81,12 @@ export const Vitrine = [
         precoAntigo: 27.80,
         precoAtual: 21.90,
         imagem: "img/livros/a-letra-escarlate.png",
-        alt: "capa do livro A Letra Escarlate"
+        alt: "capa do livro A Letra Escarlate",
+        sinopse: "Na Boston puritana do século XVII, Hester Prynne é condenada por adultério após ter uma filha e se recusar a revelar o pai, sendo obrigada a usar a letra A bordada no peito como símbolo de vergonha.",
+        autor: "Nathaniel Hawthorne",
+        editora: "Editora Antofágica",
+        ano: 2024, 
+        numPaginas: 392
     }
 ];
 

@@ -388,6 +388,21 @@ header {
     cursor: pointer;
 }
 
+#men-confirmacao-newsletter {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--fundoPadrao);
+}
+
+#men-confirmacao-newsletter h3 {
+    color: var(--destaqueSecundario);
+    font-family: var(--fonteTitulos);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
 /****************
     FOOTER
 ****************/

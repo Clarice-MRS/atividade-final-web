@@ -9,7 +9,12 @@ export const catalogo = [
         precoAntigo: 27.80,
         precoAtual: 21.90,
         imagem: "img/livros/desventuras-em-serie.png",
-        alt: "capa do livro Desventuras em Série: Mau Começo"
+        alt: "capa do livro Desventuras em Série: Mau Começo",
+        sinopse: "Após perderem os pais em um misterioso incêndio, os irmãos Violet, Klaus e Sunny Baudelaire são enviados para viver com o cruel Conde Olaf que planeja roubar a herança da família por meio de um casamento forjado com Violet.",
+        autor: "Lemony Snicket",
+        editora: "Seguinte",
+        ano: 2001, 
+        numPaginas: 152
     },
     {
         id: 8,
@@ -18,7 +23,12 @@ export const catalogo = [
         precoAntigo: 27.80,
         precoAtual: 21.90,
         imagem: "img/livros/o-pequeno-principe.png",
-        alt: "capa do livro O Pequeno Príncipe"
+        alt: "capa do livro O Pequeno Príncipe",
+        sinopse: "um piloto sofre uma pane e cai no deserto do Saara, onde encontra um misterioso menino de cabelos dourados vindo de um pequeno asteroide. Ao longo dos dias, o jovem príncipe relata suas viagens por outros planetas e os encontros com adultos peculiares, compartilhando reflexões profundas ",
+        autor: "Antoine Saint-Exupéry",
+        editora: "Casa dos Livros",
+        ano: 2013, 
+        numPaginas: 94
     },
 	{
         id: 9,
@@ -27,7 +37,12 @@ export const catalogo = [
         precoAntigo: 35.90,
         precoAtual: 28.50,
         imagem: "img/livros/coraline.png",
-        alt: "capa do livro Coraline"
+        alt: "capa do livro Coraline",
+        sinopse: "Uma garota atravessa uma porta secreta e encontra uma versão paralela de sua vida onde seus pais têm botões nos olhos, precisando lutar para escapar e salvar sua família verdadeira quando a Outra Mãe tenta prendê-la lá para sempre.",
+        autor: "Neil Gaiman",
+        editora: "Intrínseca",
+        ano: 2020, 
+        numPaginas: 224
     },
 	{
 		id: 10,
@@ -36,7 +51,12 @@ export const catalogo = [
         precoAntigo: 35.90,
         precoAtual: 28.50,
         imagem: "img/livros/ponto-de-impacto.png",
-        alt: "capa do livro Ponto de Impacto"
+        alt: "capa do livro Ponto de Impacto",
+        sinopse: "às vésperas da eleição presidencial nos Estados Unidos, a NASA anuncia a descoberta de um meteorito com fósseis extraterrestres no Ártico. Enviada pela Casa Branca para validar o achado, a analista Rachel Sexton descobre indícios de uma fraude científica",
+        autor: "Dan Brown",
+        editora: "Sextante",
+        ano: 2005, 
+        numPaginas: 440
 	},
 	{
         id: 11,
@@ -45,7 +65,12 @@ export const catalogo = [
         precoAntigo: 48.90,
         precoAtual: 34.70,
         imagem: "img/livros/a-cabeca-do-santo.png",
-        alt: "capa do livro A Cabeça do Santo"
+        alt: "capa do livro A Cabeça do Santo",
+        sinopse: "Samuel atravessa o sertão do Ceará para cumprir o último pedido de sua mãe falecida e encontrar o pai que nunca conheceu. Ao chegar à cidade de Candeia, ele se abriga na cabeça oca de uma estátua inacabada de Santo Antônio e descobre que ali dentro consegue ouvir as preces amorosas das mulheres.",
+        autor: "Socorro Acioli",
+        editora: "Companhia das Letras",
+        ano: 2014, 
+        numPaginas: 176
     },
     {
         id: 12,
@@ -54,7 +79,12 @@ export const catalogo = [
         precoAntigo: 27.80,
         precoAtual: 21.90,
         imagem: "img/livros/a-familia-pantano.png",
-        alt: "capa do livro A Família Pântano: Vizinhos"
+        alt: "capa do livro A Família Pântano: Vizinhos",
+        sinopse: "Essa é uma família de bruxos e magos cujos sete filhos foram criados em laboratório por meio de feitiçaria, com exceção da caçula Betinha, uma garota de aparência comum que lança encantos desastrados por onde passa. ",
+        autor: "Colin Thompson",
+        editora: "BRINQUE-BOOK",
+        ano: 2007, 
+        numPaginas: 172
     },
     {
         id: 13,
@@ -63,7 +93,12 @@ export const catalogo = [
         precoAntigo: 27.80,
         precoAtual: 21.90,
         imagem: "img/livros/o-mestre-e-margarida.png",
-        alt: "capa do livro O Mestre e Margarida"
+        alt: "capa do livro O Mestre e Margarida",
+        sinopse: "O Diabo visita a Moscou soviética dos anos 1930 para expor a hipocrisia da sociedade local, enquanto Margarida faz um pacto sobrenatural e se torna uma bruxa para resgatar seu amado, um escritor censurado chamado Mestre, e o manuscrito que ele escreveu sobre Pôncio Pilatos.",
+        autor: "Mikhail Bulgakov",
+        editora: "Alfaguara",
+        ano: 2010, 
+        numPaginas: 456
     },
 	{
         id: 14,
@@ -72,6 +107,11 @@ export const catalogo = [
         precoAntigo: 45.90,
         precoAtual: 38.90,
         imagem: "img/livros/os-perigos-de-fumar-na-cama.png",
-        alt: "capa do livro Os Perigos de Fumar na Cama"
+        alt: "capa do livro Os Perigos de Fumar na Cama",
+        sinopse: "O livro connta com doze contos de terror contemporâneo exploram o lado sombrio e perturbador do cotidiano urbano através de fantasmas, obsessões, bruxaria e mortos.",
+        autor: "Mariana Enriquez",
+        editora: "Intrínseca",
+        ano: 2023, 
+        numPaginas: 144
     },
 ]
