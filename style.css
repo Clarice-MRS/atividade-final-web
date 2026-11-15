@@ -160,7 +160,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 3rem 1rem 2rem 1rem;
     position: relative;
     overflow: hidden;
     border-radius: 0 0.5rem 0.5rem 0;
@@ -496,6 +496,7 @@ header {
 }
 
 .sobre-celulose h2, .form-contato h2 {
+    text-align: center;
     font-size: 30px;
     font-family: var(--fonteTitulos);
     color: var(--destaqueSecundario);
@@ -601,6 +602,47 @@ textarea::placeholder {
 
 /* Celular */
 @media screen and (max-width:  576px) {
+    .sobre-celulose {
+        flex-direction: column;
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .sobre-celulose article {
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .sobre-celulose p {
+        text-align: justify;
+    }
+
+    .sobre-celulose img {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .form-contato {
+        width: 80%;
+        margin: 1rem;
+        padding: 1.5rem;
+        align-items: center;
+    }
+
+    .topo-contato {
+        width: 100%;
+        text-align: center;
+    }
+
+    #formulario-p-contato {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #formulario-p-contato input,
+    #formulario-p-contato textarea {
+        width: 95%;
+    }
 
 }
 
@@ -614,6 +656,7 @@ textarea::placeholder {
         flex-direction: row;
         justify-content: space-evenly;
     }
+    
 }
 
 /* Desktop */
