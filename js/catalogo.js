@@ -25,7 +25,7 @@ export const catalogo = [
         imagem: "img/livros/o-pequeno-principe.jpg",
         alt: "capa do livro O Pequeno Príncipe",
         sinopse: "Um piloto sofre uma pane e cai no deserto do Saara, onde encontra um misterioso menino de cabelos dourados vindo de um pequeno asteroide. Ao longo dos dias, o jovem príncipe relata suas viagens por outros planetas e os encontros com adultos peculiares, compartilhando reflexões profundas ",
-        autor: "Antoine Saint-Exupéry",
+        autor: "Antoine de Saint-Exupéry",
         editora: "Casa dos Livros",
         ano: 2013,
         numPaginas: 94
@@ -108,7 +108,7 @@ export const catalogo = [
         precoAtual: 38.90,
         imagem: "img/livros/os-perigos-de-fumar-na-cama.png",
         alt: "capa do livro Os Perigos de Fumar na Cama",
-        sinopse: "O livro connta com doze contos de terror contemporâneo exploram o lado sombrio e perturbador do cotidiano urbano através de fantasmas, obsessões, bruxaria e mortos.",
+        sinopse: "O livro conta com doze contos de terror contemporâneo exploram o lado sombrio e perturbador do cotidiano urbano através de fantasmas, obsessões, bruxaria e mortos.",
         autor: "Mariana Enriquez",
         editora: "Intrínseca",
         ano: 2023,

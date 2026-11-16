@@ -12,7 +12,7 @@
     <header>
         <div class="header-menu">
             <button type="button" class="menuButton" id="menuButton"></button>
-            <menu class="menu" id="menu" style="display: none;">
+            <menu class="menu" id="menu" hidden>
                 <a class="menu__item active">HOME</a>
                 <a class="menu__item" href="catalogo.html">CATÁLOGO</a>
                 <a class="menu__item" href="contato.html">CONTATO</a>
@@ -21,7 +21,10 @@
 
         <a href="index.html"><img src="img/logo.svg" alt="logomarca" class="header-logo"></a>
 
-        <button type="button" class="carrinhoButton"></button>
+        <button type="button" class="carrinhoButton" id="toggle-carrinho"
+            aria-label="Abrir carrinho de compras" aria-controls="cart-drawer" aria-expanded="false">
+            <span class="carrinho-count" aria-live="polite" hidden>0</span>
+        </button>
     </header>
 
     <main>
@@ -34,7 +37,7 @@
                     <img class="banner__bgImg" src="img/livros/o-pequeno-principe.jpg" alt="O Pequeno Príncipe">
                     <p class="banner__description">Uma jornada delicada sobre amizade, amor e descobertas. Ao viajar por diferentes planetas, um pequeno príncipe conhece personagens que o fazem refletir sobre a vida, os sentimentos e aquilo que realmente importa. Uma história atemporal que encanta leitores de todas as idades.</p>
                     <p class="banner__description">Descubra essa sensível história...</p>
-                    <button class="banner__button">Detalhes</button>
+                    <button class="banner__button" type="button" data-featured-book="8">Detalhes</button>
                 </div>
             </div>
         </section>
